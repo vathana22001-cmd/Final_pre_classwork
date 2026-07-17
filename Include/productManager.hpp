@@ -3,7 +3,6 @@
 #include <string>
 #include "product.hpp"
 
-// Manager System to handle data logic
 class ProductManager {
 private:
     std::vector<Product> products;

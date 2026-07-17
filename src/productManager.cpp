@@ -5,14 +5,11 @@
 
 using namespace std;
 
-// Create (Add) 
-
 void ProductManager::create_product(Product product) {
     products.push_back(product);
     cout << "Product added successfully" << endl;
 }
 
-// Read (Display All)
 void ProductManager::display_products() {
     if (products.empty()) {
         cout << "[!] Inventory is empty." << endl;
@@ -34,7 +31,6 @@ void ProductManager::display_products() {
     }
 }
 
-// Check Existence
 bool ProductManager::is_exist(int id) {
     for (size_t i = 0; i < products.size(); i++) {
         if (products.at(i).id == id) {
@@ -44,7 +40,6 @@ bool ProductManager::is_exist(int id) {
     return false;
 }
 
-// Update
 void ProductManager::update_product(int id, Product updatedData) {
     for (size_t i = 0; i < products.size(); i++) {
         if (products.at(i).id == id) {
@@ -58,7 +53,6 @@ void ProductManager::update_product(int id, Product updatedData) {
     }
 }
 
-// Delete
 void ProductManager::delete_product(int id) {
     for (size_t i = 0; i < products.size(); i++) {
         if (products.at(i).id == id) {
@@ -69,7 +63,6 @@ void ProductManager::delete_product(int id) {
     }
 }
 
-// Search by Title (Case-Insensitive Substring Match)
 void ProductManager::search_by_title(string target_title) {
     cout << left << setw(5) << "ID"
          << setw(25) << "Title"

@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 
-// Product Entity
+
 struct Product {
     int id;
     std::string title;
