@@ -7,7 +7,6 @@ using namespace std;
 int main() {
 
     system("cls"); 
-
     ProductManager manager;
     int next_id = 1;
 
