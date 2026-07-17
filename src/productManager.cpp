@@ -5,7 +5,8 @@
 
 using namespace std;
 
-// Create (Add)
+// Create (Add) 
+
 void ProductManager::create_product(Product product) {
     products.push_back(product);
     cout << "Product added successfully" << endl;
